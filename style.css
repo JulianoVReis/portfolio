@@ -25,31 +25,96 @@ ul {
 	list-style: none;
 }
 
-nav a {
-	text-decoration: none;
-	font-size: 1.1rem;
-	color: #F6F6F6;
+a {
+  background-image: linear-gradient(to right, #19E428, #19E428 50%,#F6F6F6 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before{
+  content: '';
+  background: #19E428;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before{
+  width: 100%;
 }
 
 #perfil {
-	height: 25rem;
+	height: 40.5rem;
 	width: 100%;
 	background-color: #161616;
-	padding-top: 3.3rem;
+	padding-top: 7.5rem;
 }
 
 #perfil img {
 	display: block;
-	width: 10rem;
+	width: 17rem;
 	border-radius: 50%;
+	padding-bottom: 1rem;
 	margin: auto;
+}
+
+#wrapper {
+  display: grid;
+  place-items: center;
 }
 
 #perfil h1 {
 	color: #F6F6F6;
-	font-size: 2.5rem;
 	text-align: center;
-	padding-top: 1rem;
+	font-size: 2.5rem;
+	width: 10.5ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #19E428;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.efeito {
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 #perfil p {
@@ -63,10 +128,51 @@ span {
 	color: #19E428;
 }
 
-#conhecimentos {
-	background-color: #111111;
+strong {
+	color: #19E428;
 }
 
-#conhecimentos h2 {
+#educacao {
+	height: 25rem;
+	width: 100%;
+	background-color: #191919;
+}
+
+#educacao h2 {
+	height: 4rem;
+	width: 8rem;
 	color: #F6F6F6;
+	background-color: #161616;
+	border-radius: 2rem;
+	padding: 1rem 0 0 1rem;
+}
+
+#cursos {
+	height: 25rem;
+	width: 100%;
+	background-color: #161616;
+}
+
+#cursos h2 {
+	height: 4rem;
+	width: 6.5rem;
+	color: #F6F6F6;
+	background-color: #191919;
+	border-radius: 2rem;
+	padding: 1rem 0 0 1rem;
+}
+
+#tecnologias {
+	height: 25rem;
+	width: 100%;
+	background-color: #191919;
+}
+
+#tecnologias h2 {
+	height: 4rem;
+	width: 9.5rem;
+	color: #F6F6F6;
+	background-color: #161616;
+	border-radius: 2rem;
+	padding: 1rem 0 0 1rem;
 }
