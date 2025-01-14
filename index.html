@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Portfólio</title>
 </head>
 <body>
@@ -11,6 +12,7 @@
 		<nav>
 			<ul>
 				<li><a href="">Início</a></li>
+				<li><a href="#sobre">Sobre</a></li>
 				<li><a href="">Conhecimentos</a></li>
 				<li><a href="">Projetos</a></li>
 				<li><a href="">Contato</a></li>
@@ -20,13 +22,24 @@
 	<main>
 		<section id="perfil">
 					<img src="img/minhaFoto.jpg" alt="Foto Perfil">
-					<div id="wrapper">
-						<h1>Juliano Reis<span>.</span></h1>
+						<div class="drop">
+							<div class="nome">Juliano</div>
+							<div class="r">R</div>
+							<div class="e">e</div>
+							<div class="i">i</div>
+							<div class="s">s</div>
+							<div class="ponto"><span>.</span></div>
 					</div>
-					<p>Estudante de <strong class="efeito">Análise e Desenvolvimento de Sistemas</strong>, em busca <br> de oportunidades na área de <strong class="efeito">desenvolvimento web</strong>.</p>
-		</section>
-		<section id="educacao">
-			<h2>Educação</h2>
+					<p data-aos="fade-down">Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, em busca <br> de oportunidades na área de <strong>desenvolvimento web</strong>.</p>
+					<div class="arrow">
+						<span></span>
+						<span></span>
+						<span></span>
+				</div>
+				</section>
+		<section id="sobre">
+			<h2 data-aos="fade-left">Sobre</h2>
+			<p data-aos="fade-right" data-aos-anchor-placement="top-bottom">Olá, meu nome é Juliano. <br> Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente cursando o primeiro ano da faculdade. Estou em constante busca por aprendizado e desafios que me permitam aplicar meus conhecimentos, aprimorar minhas competências e contribuir para o desenvolvimento de projetos impactantes.</p>
 		</section>
 		<section id="cursos">
 			<h2>Cursos</h2>
@@ -38,6 +51,10 @@
 	<footer>
 
 	</footer>
-	<script src="script.js"></script>
+	<script src="script.js" ></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>

@@ -72,49 +72,66 @@ a:hover::before{
 	margin: auto;
 }
 
-#wrapper {
-  display: grid;
-  place-items: center;
-}
-
-#perfil h1 {
+#perfil div {
 	color: #F6F6F6;
-	text-align: center;
 	font-size: 2.5rem;
-	width: 10.5ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid #19E428;
 }
 
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
+.drop {
+	display: flex;
+  justify-content: center;
 }
 
-.efeito {
-	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+.nome {
+	margin-right: .5rem;
 }
 
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
+.r {
+	opacity: 0;
+	animation: drop 0.4s linear forwards;
+}
+
+.e {
+	opacity: 0;
+	animation: drop 0.4s linear forwards 0.2s;
+}
+
+.i {
+	opacity: 0;
+	animation: drop 0.4s linear forwards 0.4s;
+}
+
+.s {
+	opacity: 0;
+	animation: drop 0.4s linear forwards 0.6s;
+}
+
+.ponto {
+	opacity: 0;
+	animation: drop 0.4s linear forwards 0.8s;
+}
+
+@keyframes drop {
+	0% {
+			transform: translateY(-200px);
+			opacity: 0;
+	}
+	50% {
+			transform: translateY(0px);
+			opacity: 1;
+	}
+	65% {
+			transform: translateY(-17px);
+			opacity: 1;
+	}
+	75% {
+			transform: translateY(-22px);
+			opacity: 1;
+	}
+	100% {
+			transform: translateY(0px);
+			opacity: 1;
+	}
 }
 
 #perfil p {
@@ -122,6 +139,48 @@ a:hover::before{
 	color: #F6F6F6;
 	line-height: 1.5rem;
 	padding-top: 1rem;
+}
+
+.arrow {
+	position: absolute;
+	top: 89%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform: rotate(0deg);
+	cursor: pointer;
+}
+
+.arrow span {
+	display: block;
+	width: 1.5vw;
+	height: 1.5vw;
+	border-bottom: 5px solid #F6F6F6;
+	border-right: 5px solid #F6F6F6;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+	animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+	animation-delay: -0.4s;
+}
+
+@keyframes animate {
+	0% {
+			opacity: 0;
+			transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50% {
+			opacity: 1;
+	}
+	100% {
+			opacity: 0;
+			transform: rotate(45deg) translate(20px, 20px);
+	}
 }
 
 span {
@@ -132,19 +191,28 @@ strong {
 	color: #19E428;
 }
 
-#educacao {
+#sobre {
+	overflow: hidden;
+	position: relative;
 	height: 25rem;
 	width: 100%;
 	background-color: #191919;
 }
 
-#educacao h2 {
-	height: 4rem;
-	width: 8rem;
+#sobre h2 {
+	font-size: 20rem;
+	text-align: center;
+	color: #151515;
+	margin-left: 8rem;
+}
+
+#sobre p {
+	position: absolute;
+	top: 14%;
+	width: 35rem;
 	color: #F6F6F6;
-	background-color: #161616;
-	border-radius: 2rem;
-	padding: 1rem 0 0 1rem;
+	line-height: 1.5rem;
+	margin: 5rem 0 0 3rem;
 }
 
 #cursos {
@@ -158,7 +226,6 @@ strong {
 	width: 6.5rem;
 	color: #F6F6F6;
 	background-color: #191919;
-	border-radius: 2rem;
 	padding: 1rem 0 0 1rem;
 }
 
