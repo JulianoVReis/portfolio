@@ -19,13 +19,13 @@ header {
 	background-color: #0D0D0D;
 }
 
-ul {
+header ul {
 	display: flex;
 	gap: 3rem;
 	list-style: none;
 }
 
-a {
+header a {
   background-image: linear-gradient(to right, #19E428, #19E428 50%,#F6F6F6 50%);
   background-size: 200% 100%;
   background-position: -100%;
@@ -37,7 +37,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:before {
+header a:before {
   content: '';
   background: #19E428;
   display: block;
@@ -49,11 +49,11 @@ a:before {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover {
- background-position: 0;
+header a:hover {
+  background-position: 0;
 }
 
-a:hover::before {
+header a:hover::before {
   width: 100%;
 }
 
@@ -114,31 +114,32 @@ a:hover::before {
 
 @keyframes drop {
 	0% {
-			transform: translateY(-200px);
-			opacity: 0;
+		transform: translateY(-200px);
+		opacity: 0;
 	}
 	50% {
-			transform: translateY(0px);
-			opacity: 1;
+		transform: translateY(0px);
+		opacity: 1;
 	}
 	65% {
-			transform: translateY(-17px);
-			opacity: 1;
+		transform: translateY(-17px);
+		opacity: 1;
 	}
 	75% {
-			transform: translateY(-22px);
-			opacity: 1;
+		transform: translateY(-22px);
+		opacity: 1;
 	}
 	100% {
-			transform: translateY(0px);
-			opacity: 1;
+		transform: translateY(0px);
+		opacity: 1;
 	}
 }
 
 #perfil p {
+	font-size: 1.1rem;
 	text-align: center;
 	color: #F6F6F6;
-	line-height: 1.5rem;
+	padding-bottom: .5rem;
 }
 
 .arrow {
@@ -171,15 +172,15 @@ a:hover::before {
 
 @keyframes animate {
 	0% {
-			opacity: 0;
-			transform: rotate(45deg) translate(-20px, -20px);
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
 	}
 	50% {
-			opacity: 1;
+		opacity: 1;
 	}
 	100% {
-			opacity: 0;
-			transform: rotate(45deg) translate(20px, 20px);
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
 	}
 }
 
@@ -208,38 +209,30 @@ strong {
 
 #sobre p {
 	position: absolute;
-	top: 14%;
+	top: 30%;
 	width: 35rem;
+	font-size: 1.1rem;
 	color: #F6F6F6;
 	line-height: 1.5rem;
-	margin: 5rem 0 0 3rem;
+	margin-left: 5rem;
 }
 
-#cursos {
+#educacao {
 	height: 25rem;
 	width: 100%;
 	background-color: #161616;
 }
 
-#cursos h2 {
-	height: 4rem;
-	width: 6.5rem;
+#educacao h2 {
 	color: #F6F6F6;
-	background-color: #191919;
-	padding: 1rem 0 0 1rem;
 }
 
-#tecnologias {
+#especializacoes {
 	height: 25rem;
 	width: 100%;
 	background-color: #191919;
 }
 
-#tecnologias h2 {
-	height: 4rem;
-	width: 9.5rem;
+#especializacoes h2 {
 	color: #F6F6F6;
-	background-color: #161616;
-	border-radius: 2rem;
-	padding: 1rem 0 0 1rem;
 }
