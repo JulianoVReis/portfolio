@@ -209,7 +209,7 @@ strong {
 
 #sobre p {
 	position: absolute;
-	top: 30%;
+	top: 32%;
 	width: 35rem;
 	font-size: 1.1rem;
 	color: #F6F6F6;
@@ -217,22 +217,114 @@ strong {
 	margin-left: 5rem;
 }
 
-#educacao {
-	height: 25rem;
+.fundo {
+	position: absolute;
+	top: 10.5%;
+	left: 1.8%;
+	height: 20rem;
+	width: 40rem;
+	color: transparent;
+	background-color: #00000030;
+}
+
+#conhecimentos {
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	gap: 8rem;
+	height: 30rem;
 	width: 100%;
 	background-color: #161616;
+	padding: 4rem;
 }
 
-#educacao h2 {
-	color: #F6F6F6;
-}
-
-#especializacoes {
-	height: 25rem;
-	width: 100%;
+.educacao {
+	height: 15rem;
+	width: 22rem;
 	background-color: #191919;
+	border: .2rem solid #151515;
+	border-radius: 1rem;
 }
 
-#especializacoes h2 {
+.educacao h3 {
+	color: #19E428;
+	padding: .8rem;
+}
+
+.educacao img {
+	display: block;
+	width: 10rem;
+	margin: auto;
+}
+
+.educacao-txt {
+	position: absolute;
+	top: 185%;
+	right: 71.5%;
+	height: 15rem;
+	width: 19rem;
 	color: #F6F6F6;
+	background-color: #00000030;
+	padding: 1rem;
+}
+
+.cursos {
+	height: 15rem;
+	width: 22rem;
+	background-color: #191919;
+	border: .2rem solid #151515;
+	border-radius: 1rem;
+}
+
+.cursos h3 {
+	color: #19E428;
+	padding: .8rem;
+}
+
+.cursos img {
+	display: block;
+	width: 10rem;
+	margin: auto;
+}
+
+.cursos-txt {
+	position: absolute;
+	top: 185%;
+	left: 40%;
+	height: 15rem;
+	width: 19rem;
+	color: #F6F6F6;
+	background-color: #00000030;
+	padding: 1rem;
+}
+
+.tecnologias {
+	height: 15rem;
+	width: 22rem;
+	background-color: #191919;
+	border: .2rem solid #151515;
+	border-radius: 1rem;
+}
+
+.tecnologias h3 {
+	color: #19E428;
+	padding: .8rem;
+}
+
+.tecnologias img {
+	display: block;
+	width: 10rem;
+	margin: auto;
+}
+
+.tecnologias-txt {
+	position: absolute;
+	top: 185%;
+	left: 71.6%;
+	height: 15rem;
+	width: 19rem;
+	color: #F6F6F6;
+	background-color: #00000030;
+	transition: 1s all ease;
+	padding: 1rem;
 }
