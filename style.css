@@ -25,7 +25,8 @@ header ul {
 	list-style: none;
 }
 
-header a {
+.efeito-link {
+	width: fit-content;
   background-image: linear-gradient(to right, #19E428, #19E428 50%,#F6F6F6 50%);
   background-size: 200% 100%;
   background-position: -100%;
@@ -37,7 +38,7 @@ header a {
   transition: all 0.3s ease-in-out;
 }
 
-header a:before {
+.efeito-link:before {
   content: '';
   background: #19E428;
   display: block;
@@ -49,11 +50,11 @@ header a:before {
   transition: all 0.3s ease-in-out;
 }
 
-header a:hover {
+.efeito-link:hover {
   background-position: 0;
 }
 
-header a:hover::before {
+.efeito-link:hover::before {
   width: 100%;
 }
 
@@ -192,6 +193,26 @@ strong {
 	color: #19E428;
 }
 
+.sub {
+	color: #b2b2b2;
+}
+
+.javascript {
+	color: #F7E025;
+}
+
+.html {
+	color: #FF7C1D;
+}
+
+.css {
+	color: #09B0E8;
+}
+
+.algoritmo {
+	color: #E6B548;
+}
+
 #sobre {
 	overflow: hidden;
 	position: relative;
@@ -261,7 +282,10 @@ strong {
 	position: absolute;
 	top: 185%;
 	right: 71.5%;
-	height: 15rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2.3rem;
+	height: 11.5rem;
 	width: 19rem;
 	color: #F6F6F6;
 	background-color: #00000030;
@@ -291,11 +315,24 @@ strong {
 	position: absolute;
 	top: 185%;
 	left: 40%;
-	height: 15rem;
+	display: flex;
+	flex-direction: column;
+	gap: .3rem;
+	height: 12rem;
 	width: 19rem;
 	color: #F6F6F6;
 	background-color: #00000030;
 	padding: 1rem;
+}
+
+.cursos-txt h4 {
+	display: flex;
+	gap: .5rem;
+	padding-bottom: .4rem;
+}
+
+.cursos-txt img {
+width: 1.5rem;
 }
 
 .tecnologias {
