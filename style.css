@@ -224,38 +224,40 @@ strong {
 }
 
 #sobre {
+	display: flex;
+	align-items: center;
 	overflow: hidden;
 	position: relative;
-	height: 25rem;
+	height: 44.8rem;
 	width: 100%;
 	background-color: #191919;
 }
 
 #sobre h2 {
-	font-size: 20rem;
-	text-align: center;
+	font-size: 25rem;
 	color: #151515;
-	margin-left: 8rem;
+	margin-left: 30rem;
 }
 
 #sobre p {
 	position: absolute;
 	top: 32%;
 	width: 35rem;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 	color: #F6F6F6;
-	line-height: 1.5rem;
+	line-height: 1.5;
 	margin-left: 5rem;
 }
 
 .fundo {
 	position: absolute;
-	top: 20%;
+	top: 22%;
 	left: 1.8%;
-	height: 15rem;
-	width: 40rem;
+	height: 25rem;
+	width: 42rem;
 	color: transparent;
 	background-color: #00000030;
+	border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 }
 
 #conhecimentos {
@@ -263,8 +265,9 @@ strong {
 	justify-content: center;
 	align-items: center;
 	gap: 10rem;
-	height: 25rem;
+	height: 44.8rem;
 	width: 100%;
+	overflow: hidden;
 	background-color: #161616;
 }
 
@@ -303,8 +306,9 @@ strong {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	height: 17rem;
-	width: 20rem;
+	height: 22rem;
+	width: 25rem;
+	font-size: 1.5rem;
 	color: #F6F6F6;
 	background-color: #0D0D0D;
 	padding: .5rem;
@@ -412,17 +416,6 @@ strong {
   transform: rotateY(180deg);
 }
 
-#projetos {
-	display: grid;
-  grid-template-rows: 500px 100px;
-  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-  align-items: center;
-  justify-items: center;
-	height: 40rem;
-	width: 100%rem;
-	background-color: #191919;
-}
-
 #contato {
 	display: flex;
 	align-items: center;
@@ -447,4 +440,160 @@ strong {
 
 #contato img {
 	width: 1.3rem;
+}
+
+#projetos {
+	display: flex;
+	gap: 25.5rem;
+	height: 44.8rem;
+	width: 100%;
+	background-color: #191919;
+	padding: 2.5rem;
+}
+
+#projetos p {
+	color: #0D0D0D;
+	font-size: 8rem;
+}
+
+.jetos {
+	padding-left: 4.7rem;
+}
+
+/* .back01 {
+	position: absolute;
+	top: 98rem;
+	height: 7rem;
+	width: 12.5rem;
+	color: transparent;
+	background-color: #00000030;
+	border-radius: 0 50px 0 10px;
+}
+
+.back02 {
+	position: absolute;
+	top: 107.5rem;
+	left: 62.4rem;
+	height: 8rem;
+	width: 20rem;
+	color: transparent;
+	background-color: #00000030;
+	border-radius: 0 50px 0 10px;
+} */
+
+.carousel {
+	position: relative;
+	height: 20rem;
+	width: 30rem;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+.carousel-inner {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+	position: static;
+	opacity: 100;
+}
+
+.carousel-item {
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: opacity 0.6s ease-out;
+	transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+	display: block;
+	height: 20rem;
+	max-width: 100%;
+}
+
+.carousel-control {
+	background: rgba(0, 0, 0, 0.28);
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+	font-size: 40px;
+	height: 40px;
+	line-height: 35px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	cursor: pointer;
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	text-align: center;
+	width: 40px;
+	z-index: 10;
+}
+
+.carousel-control.prev {
+	left: 2%;
+}
+
+.carousel-control.next {
+	right: 2%;
+}
+
+.carousel-control:hover {
+	background: rgba(0, 0, 0, 0.8);
+	color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+	display: block;
+}
+
+.carousel-indicators {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 2%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 10;
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.carousel-bullet {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 35px;
+}
+
+.carousel-bullet:hover {
+	color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+	color: #428bca;
+}
+
+#title {
+	width: 100%;
+	position: absolute;
+	padding: 0px;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 27px;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Open Sans', sans-serif;
+	z-index: 9999;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
