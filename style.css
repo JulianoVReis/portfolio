@@ -611,7 +611,7 @@ strong {
 	gap: 5rem;
 }
 
-#contato p {
+#contato .footer-info {
 	display: flex;
 	gap: .3rem;
 }
