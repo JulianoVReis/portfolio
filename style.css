@@ -21,12 +21,8 @@ nav {
 
 nav ul {
 	display: flex;
-	gap: 2rem;
+	gap: 3rem;
 	list-style: none;
-}
-
-nav a {
-	padding: 1rem;
 }
 
 .logo {
