@@ -1,4 +1,4 @@
-function inicioScrollSuave() {
+function scrollSuave() {
 	let linksInt = document.querySelectorAll('.scrolling a[href^="#"]')
 
 	function smoothScrolling(event) {
@@ -15,4 +15,4 @@ function inicioScrollSuave() {
 		link.addEventListener('click', smoothScrolling)
 	})
 }
-inicioScrollSuave()
+scrollSuave()
