@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Portfólio</title>
@@ -24,8 +25,29 @@
 			</nav>
 		</header>
 		<main id="home">
+			<section class="sect-contato">
+				<div class="social">
+					<img src="img/github.svg" alt="GitHub">
+					<img src="img/linkedin.svg" alt="linkedIn">
+				</div>
+				<div class="vitae">
+					<p>Baixar Curriculum</p>
+					<div class="arrow02"></div>
+					<button class="glow-on-hover" type="button"><a href="../curriculum/curriculum.zip" download>Download</a></button>
+				</div>
+					<div class="div-contato">
+						<div>
+							<img src="img/gmail.svg" alt="Gmail">
+							<p>julianovreis@gmail.com</p></div>
+						<div>
+							<img src="img/whatsapp.svg" alt="WhatsApp">
+							<p>(51) 98919-9543</p>
+						</div>
+					</div>
+			</section>
 			<section id="sect01" class="conteudo1">
 				<p>Esta é a seção <span class="span-verde">Home</span>.</p>
+				<p><span class="nome-azul">juliano</span>.<span class="amarelo01">Reis</span><span class="amarelo02">( )</span></p>
 		  </section>
 			<section class="conteudo2 sect01">
 				<div class="drop">
@@ -142,7 +164,7 @@
 				<p>Esta é a seção dos <span class="span-verde">Projetos</span> nos quais trabalhei.</p>
 			</section>
 			<section class="conteudo2 projetos">
-						<div class="box">
+						<div data-aos="flip-left" data-aos-duration="1500" class="box">
 								<div class="imgBox">
 										<img src="img/site-viagens.png" alt="Site de Viagens">
 								</div>
@@ -151,7 +173,7 @@
 										<p><a class="efeito-link" href="https://julianovreis.github.io/site-viagem/" target="_blank">Acesse</a></p>
 								</div>
 						</div>
-						<div class="box">
+						<div data-aos="flip-left" data-aos-duration="2000" class="box">
 								<div class="imgBox">
 										<img src="img/pokedex.png" alt="Pokédex">
 								</div>
@@ -160,7 +182,7 @@
 										<p><a class="efeito-link" href="https://julianovreis.github.io/pokedex/" target="_blank">Acesse</a></p>
 								</div>
 						</div>
-						<div class="box">
+						<div data-aos="flip-left" data-aos-duration="2500" class="box">
 								<div class="imgBox">
 										<img src="img/em-breve.png" alt="">
 								</div>
@@ -169,7 +191,7 @@
 										<p><a class="efeito-link" href="#">Acesse</a></p>
 								</div>
 						</div>
-						<div class="box">
+						<div data-aos="flip-left" data-aos-duration="3000" class="box">
 								<div class="imgBox">
 										<img src="img/em-breve.png" alt="">
 								</div>
@@ -181,6 +203,8 @@
 			</section>
 		</main>
 		<footer>
+			<p>Site criado por <strong>Juliano Reis</strong></p>
+			<p><span class="nome-azul">juliano</span>.<span class="amarelo01">Reis</span><span class="amarelo02">( )</span></p>
 		</footer>
 		<script src="script.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
