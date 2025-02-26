@@ -90,6 +90,14 @@ main {
 	padding: 0 1rem;
 }
 
+.foto-mobile img {
+	display: none;
+}
+
+.foto-mobile p {
+	display: none;
+}
+
 .drop {
 	display: flex;
   justify-content: center;
@@ -715,18 +723,17 @@ footer {
 	
 	.menu ul {
 		display: flex;
-		gap: .8rem;
+		gap: .6rem;
 		margin: 1rem;
 	}
 	
 	.menu li {
-		width: 4.4rem;
+		width: 4.5rem;
 		text-align: center;
 		list-style: none;
 		border-radius: .2rem;
-		transform: rotate(3deg);
+		transform: rotate(4deg);
 		background-image: linear-gradient(to left, #F6F6F6, #ECECEC);
-		padding: .2rem 0;
 		margin: auto;
 	}
 	
@@ -736,7 +743,7 @@ footer {
 	}
 	
 	.menu li a {
-		font-size: .8rem;
+		font-size: .9rem;
 		text-decoration: none;
 		color: #070707;
 	}
@@ -771,9 +778,11 @@ footer {
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		justify-content: center;
-		gap: 1rem;
+		align-items: center;
+		gap: 1.5rem;
+		height: auto !important;
+		padding: 1rem 0;
 	}
 	
 	#sect01 {
@@ -781,15 +790,27 @@ footer {
 		justify-content: space-between;
 		padding: 0 1rem;
 	}
+
+	.foto-mobile img {
+		display: block;
+		width: 8rem;
+		border-radius: 50%;
+	}
+
+	.foto-mobile p {
+		display: block;
+		text-align: center;
+		margin-top: .5rem;
+	}
 	
 	.drop {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 1rem;
+		margin-bottom: 0rem;
 	}
 	
 	.drop p {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 	
 	.palavra {
@@ -851,11 +872,11 @@ footer {
 	
 	.texto-intro {
 		text-align: center;
-		margin-bottom: 9rem;
+		margin-bottom: 7rem;
 	}
 	
 	.texto-intro p {
-		font-size: 1rem;
+		font-size: .85rem;
 		margin-bottom: .4rem;
 	}
 	
@@ -870,8 +891,8 @@ footer {
 	
 	.arrow span {
 		display: block;
-		width: 1.5vw;
-		height: 1.5vw;
+		width: 1.5rem;
+		height: 1.5rem;
 		border-bottom: 5px solid #F6F6F6;
 		border-right: 5px solid #F6F6F6;
 		transform: rotate(45deg);
@@ -1074,7 +1095,7 @@ footer {
 	.conteudo1 {
 		display: flex;
 		align-items: center;
-		height: 4rem;
+		height: 3rem;
 		width: 100%;
 		border: 1px solid #191919;
 		border-radius: .5rem;
@@ -1082,6 +1103,10 @@ footer {
 		background-color: #222222;
 		padding-left: 1rem;
 		margin: .1rem;
+	}
+
+	.conteudo1 p {
+		font-size: .89rem;
 	}
 	
 	.conteudo2 {
