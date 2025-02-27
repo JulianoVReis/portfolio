@@ -1652,6 +1652,7 @@ footer {
 	}
 
 	.contato-mobile {
+		position: relative;
 		display: block;
 		height: 19.9rem;
 		width: 100%;
