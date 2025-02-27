@@ -718,7 +718,7 @@ footer {
 	color: #8FBFEC;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 1023px) {
 	.menu {
 		position: fixed;
 		display: flex;
@@ -1436,7 +1436,7 @@ footer {
 	}
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.menu {
 		position: fixed;
 		top: 0;
