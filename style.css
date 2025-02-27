@@ -84,6 +84,10 @@ main {
 	gap: 1rem;
 }
 
+.social-mobile {
+	display: none;
+}
+
 #sect01 {
 	display: flex;
 	justify-content: space-between;
@@ -219,6 +223,10 @@ main {
 
 .span-verde {
 	color: #19E428;
+}
+
+.contato-mobile {
+	display: none;
 }
 
 .sect-contato {
@@ -718,7 +726,7 @@ footer {
 	color: #8FBFEC;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 991px) {
 	.menu {
 		position: fixed;
 		display: flex;
@@ -1654,21 +1662,14 @@ footer {
 	.contato-mobile {
 		position: relative;
 		display: block;
-		height: 19.9rem;
+		height: auto;
 		width: 100%;
-		color: transparent;
-		background-color: transparent;
+		background-color: white;
 		margin-bottom: 1rem;
 	}
 	
 	.sect-contato {
-		position: absolute;
-		top: 374.5%;
-		left: 22%;
-		display: block;
-		height: auto;
-		width: 15rem;
-		color: #F6F6F6;
+		display: none;
 	}
 	
 	.social {
@@ -2149,14 +2150,58 @@ footer {
 	
 	footer {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: 3rem;
+		flex-wrap: wrap;
+		height: 10rem;
 		width: 95vw;
+		font-size: 1rem;
 		border-radius: .5rem;
 		background-color: #222222;
-		padding: 1rem;
+		padding: .2rem .8rem .2rem;
 		margin: .3rem auto;
+	}
+
+	footer img {
+		width: 1.2rem;
+	}
+
+	.contato-mobile01 {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.contato-mobile01 div {
+		display: flex;
+		gap: .5rem;
+		padding-bottom: .3rem;
+	}
+
+	.contato-mobile02 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: .6rem;
+	}
+
+	.contato-mobile02 button {
+		height: 2.5rem;
+		width: 4.3rem;
+		font-size: .7rem;
+	}
+
+	.contato-mobile03 {
+		display: flex;
+		justify-content: space-between;
+		width: 95vw;
+	}
+
+	.social-mobile {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.social-mobile img {
+		width: 1.8rem;
 	}
 	
 	.amarelo01 {
