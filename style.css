@@ -1922,7 +1922,7 @@ footer {
 	
 	.sobre h2 {
 		position: absolute;
-		top: 54%;
+		top: 52%;
 		left: 1%;
 		font-size: 10rem;
 		z-index: -2;
@@ -1934,7 +1934,7 @@ footer {
 		font-size: 1rem;
 		line-height: 1.2rem;
 		color: #F6F6F6;
-		margin-left: 2rem;
+		margin-left: .8rem;
 	}
 	
 	.fundo {
@@ -1942,7 +1942,7 @@ footer {
 		top: 8%;
 		left: 5%;
 		height: 17rem;
-		width: 87%;
+		width: 89.8%;
 		color: transparent;
 		background-color: #00000030;
 		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
