@@ -1387,17 +1387,17 @@ footer {
 	
 	.projetos {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+		flex-direction: column;
 		align-items: center;
-		height: 22rem;
-		padding: .5rem;
+		gap: 4.5rem;
+		height: auto;
+		padding: 2.5rem 0 4.5rem;
 	}
 	
 	.box {
 		position: relative;
-		height: 6rem;
-		width: 11rem;
+		height: 12rem;
+		width: 18rem;
 	}
 	
 	.box:hover .imgBox {
@@ -1417,8 +1417,8 @@ footer {
 	}
 	
 	.imgBox img {
-		height: 6rem;
-		width: 11rem;
+		height: 12rem;
+		width: 18rem;
 	}
 	
 	.content {
@@ -2131,20 +2131,6 @@ footer {
 		gap: 4.2rem;
 		height: auto;
 		padding: 2rem 0 4rem;
-	}
-
-	.info-projeto {
-		display: flex;
-		justify-content: space-evenly;
-		padding: .3rem;
-	}
-	
-	.info-projeto span {
-		color: #F6F6F6;
-	}
-	
-	.info-projeto p {
-		margin-left: 1rem;
 	}
 	
 	.box {
