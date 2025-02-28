@@ -711,7 +711,7 @@ main {
 
 .content h2 {
   font-size: 1rem;
-  color: #FFF9AE;
+  color: #F6F6F6;
 	margin-bottom: .275rem;
 }
 
@@ -1167,36 +1167,36 @@ footer {
 		position: relative;
 		display: flex;
 		justify-content: center;
-		align-items: flex-start;
-		height: 25rem;
-		z-index: -2;
-		padding: 3rem 1.5rem 1.5rem;
+		align-items: center;
+		height: 23rem;
+		padding-bottom: 3rem;
+		
 	}
 	
 	.sobre h2 {
 		position: absolute;
-		top: 59%;
+		top: 55%;
 		left: 3%;
 		width: 100%;
 		font-size: 10rem;
-		z-index: -1;
 		color: #1919197a;
 	}
 	
 	.sobre p {
-		width: 65%;
-		font-size: .9rem;
+		width: 75%;
+		font-size: 1rem;
 		line-height: 1.2rem;
 		color: #F6F6F6;
-		margin: 0rem 0rem 0;
+		padding-left: 1rem;
+		margin: 0;
 	}
 	
 	.fundo {
 		position: absolute;
-		top: 4%;
-		left: 8%;
-		height: 16rem;
-		width: 77%;
+		top: 3%;
+		left: 7%;
+		height: 17rem;
+		width: 85%;
 		color: transparent;
 		background-color: #00000030;
 		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
@@ -1446,7 +1446,7 @@ footer {
 	
 	.content h2 {
 		font-size: 1rem;
-		color: #FFF9AE;
+		color: #F6F6F6;
 		margin-bottom: .275rem;
 	}
 	
@@ -2195,7 +2195,7 @@ footer {
 	
 	.content h2 {
 		font-size: 1rem;
-		color: #FFF9AE;
+		color: #F6F6F6;
 		margin-bottom: .275rem;
 	}
 	
