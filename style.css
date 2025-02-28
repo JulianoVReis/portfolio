@@ -20,7 +20,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 15rem;
+	width: 15.7%;
 }
 
 .menu ul {
@@ -82,6 +82,10 @@ main {
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+}
+
+.botao-mobile {
+	display: none;
 }
 
 .social-mobile {
@@ -223,10 +227,6 @@ main {
 
 .span-verde {
 	color: #19E428;
-}
-
-.contato-mobile {
-	display: none;
 }
 
 .sect-contato {
@@ -645,10 +645,24 @@ main {
 	padding: 1rem;
 }
 
+.info-projeto {
+	display: flex;
+	justify-content: space-evenly;
+	padding: .3rem;
+}
+
+.info-projeto span {
+	color: #F6F6F6;
+}
+
+.info-projeto p {
+	margin-left: 1rem;
+}
+
 .box {
   position: relative;
   height: 12rem;
-  width: 17rem;
+  width: 18rem;
 }
 
 .box:hover .imgBox {
@@ -669,7 +683,7 @@ main {
 
 .imgBox img {
   height: 12rem;
-  width: 17rem;
+  width: 18rem;
 }
 
 .content {
@@ -685,7 +699,7 @@ main {
   z-index: 1;
   transition: 0.5s ease-in-out;
   background-color: #0d0d0dbb;
-  padding: 1.5rem;
+  padding: .5rem;
 }
 
 .content h2 {
@@ -712,6 +726,24 @@ footer {
 	background-color: #222222;
 	padding: 1rem;
 	margin: .3rem auto;
+}
+
+
+.contato-mobile01 {
+	display: none;
+}
+
+.contato-mobile02 {
+	display: none;
+}
+
+.contato-mobile03 {
+	display: flex;
+	justify-content: space-between;
+	width: 95vw;
+}
+.social-mobile {
+	display: none;
 }
 
 .amarelo01 {
@@ -1449,7 +1481,7 @@ footer {
 		position: fixed;
 		top: 0;
 		left: 2.5%;
-		width: 95vw;
+		width: 95%;
 		z-index: 3;
 	}
 	
@@ -1504,6 +1536,7 @@ footer {
 		flex-direction: column;
 		gap: .3rem;
 		width: 95vw;
+		overflow: hidden;
 		margin-top: 3.7rem;
 	}
 	
@@ -1659,15 +1692,6 @@ footer {
 		color: #19E428;
 	}
 
-	.contato-mobile {
-		position: relative;
-		display: block;
-		height: auto;
-		width: 100%;
-		background-color: white;
-		margin-bottom: 1rem;
-	}
-	
 	.sect-contato {
 		display: none;
 	}
@@ -1841,6 +1865,23 @@ footer {
 		margin: .1rem;
 	}
 
+	.botao-mobile {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+	}
+
+	.botao-mobile  span {
+		font-size: .7rem;
+		text-align: center;
+	}
+
+	.botao-mobile button {
+		height: 2.4rem;
+		width: 4.2rem;
+		font-size: .7rem;
+	}
+
 	.conteudo1 p {
 		font-size: .89rem;
 	}
@@ -1860,7 +1901,6 @@ footer {
 		justify-content: center;
 		align-items: center;
 		height: 22rem;
-		overflow: hidden;
 		z-index: -2;
 	}
 	
@@ -1893,9 +1933,8 @@ footer {
 	}
 	
 	.skills {
-		height: auto;
 		display: flex;
-		flex-wrap: wrap;
+		height: auto;
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
@@ -2087,18 +2126,31 @@ footer {
 	
 	.projetos {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
+		flex-direction: column;
 		align-items: center;
-		gap: 1rem;
-		height: 22rem;
-		padding: 1.5rem;
+		gap: 4.2rem;
+		height: auto;
+		padding: 2rem 0 4rem;
+	}
+
+	.info-projeto {
+		display: flex;
+		justify-content: space-evenly;
+		padding: .3rem;
+	}
+	
+	.info-projeto span {
+		color: #F6F6F6;
+	}
+	
+	.info-projeto p {
+		margin-left: 1rem;
 	}
 	
 	.box {
 		position: relative;
-		height: 6rem;
-		width: 9rem;
+		height: 12rem;
+		width: 18rem;
 	}
 	
 	.box:hover .imgBox {
@@ -2106,7 +2158,7 @@ footer {
 	}
 	
 	.box:hover .content {
-		transform: translate(1.5rem, 2.8rem);
+		transform: translate(1.5rem, 3.8rem);
 	}
 	
 	.imgBox {
@@ -2118,8 +2170,8 @@ footer {
 	}
 	
 	.imgBox img {
-		height: 6rem;
-		width: 9rem;
+		height: 12rem;
+		width: 18rem;
 	}
 	
 	.content {
@@ -2139,7 +2191,7 @@ footer {
 	}
 	
 	.content h2 {
-		font-size: .8rem;
+		font-size: 1rem;
 		color: #FFF9AE;
 		margin-bottom: .275rem;
 	}
@@ -2151,7 +2203,7 @@ footer {
 	footer {
 		display: flex;
 		flex-wrap: wrap;
-		height: 10rem;
+		height: 8rem;
 		width: 95vw;
 		font-size: 1rem;
 		border-radius: .5rem;
@@ -2183,12 +2235,6 @@ footer {
 		gap: .6rem;
 	}
 
-	.contato-mobile02 button {
-		height: 2.5rem;
-		width: 4.3rem;
-		font-size: .7rem;
-	}
-
 	.contato-mobile03 {
 		display: flex;
 		justify-content: space-between;
@@ -2197,11 +2243,12 @@ footer {
 
 	.social-mobile {
 		display: flex;
+		justify-content: center;
 		gap: 1rem;
 	}
 
 	.social-mobile img {
-		width: 1.8rem;
+		width: 2.5rem;
 	}
 	
 	.amarelo01 {
