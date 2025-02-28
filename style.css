@@ -1896,6 +1896,10 @@ footer {
 	.conteudo1 p {
 		font-size: .89rem;
 	}
+
+	.sect01 {
+		padding: 2rem 0 .5rem;
+	}
 	
 	.conteudo2 {
 		height: 35rem;
@@ -1912,7 +1916,8 @@ footer {
 		justify-content: center;
 		align-items: center;
 		height: 22rem;
-		z-index: -2;
+		z-index: 1;
+		padding: 0;
 	}
 	
 	.sobre h2 {
@@ -1920,27 +1925,28 @@ footer {
 		top: 54%;
 		left: 1%;
 		font-size: 10rem;
-		z-index: -1;
+		z-index: -2;
 		color: #1919197a;
 	}
 	
 	.sobre p {
-		width: 60%;
+		width: 80%;
 		font-size: 1rem;
-		line-height: 1.3rem;
+		line-height: 1.2rem;
 		color: #F6F6F6;
-		margin: 0rem 4.5rem 0;
+		margin-left: 2rem;
 	}
 	
 	.fundo {
 		position: absolute;
-		top: 10%;
+		top: 8%;
 		left: 5%;
-		height: 18rem;
-		width: 85%;
+		height: 17rem;
+		width: 87%;
 		color: transparent;
 		background-color: #00000030;
 		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+		z-index: -1;
 	}
 	
 	.skills {
@@ -1949,7 +1955,7 @@ footer {
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
-		padding: .5rem;
+		padding: 1.5rem 0 2rem;
 	}
 	
 	.formacao {
