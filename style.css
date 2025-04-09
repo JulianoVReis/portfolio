@@ -33,9 +33,14 @@ body {
 	list-style: none;
 	border-radius: .2rem;
 	transform: rotate(3deg);
+	transition: .1s;
 	background-image: linear-gradient(to left, #F6F6F6, #ECECEC);
 	padding: .4rem 0;
 	margin: .7rem 1.5rem;
+}
+
+.menu li:hover {
+	transform: rotate(0deg);
 }
 
 .menu span {
@@ -51,10 +56,6 @@ body {
 
 .contato {
 	display: none;
-}
-
-.menu li:hover {
-	transform: rotate(0deg);
 }
 
 .menu img {
@@ -246,7 +247,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
+	gap: 2.5rem;
 	height: 4rem;
 	border-radius: .5rem;
 	border: 1px solid #191919;
@@ -255,7 +256,13 @@ main {
 }
 
 .social img {
+	display: block;
 	width: 2.5rem;
+	transition: .3s;
+}
+
+.social img:hover {
+	width: 3rem;
 }
 
 .vitae {
