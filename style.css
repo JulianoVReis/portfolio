@@ -256,13 +256,13 @@ main {
 }
 
 .social img {
-	display: block;
+  display: block;
 	width: 2.5rem;
 	transition: .3s;
 }
 
 .social img:hover {
-	width: 3rem;
+	transform: rotate(50deg);
 }
 
 .vitae {
@@ -286,7 +286,7 @@ main {
 .arrow02 {
   width: 10px;
   height: 10px;
-  top: 50%;
+  top: 54%;
   margin: -20px 0 0 -20px;
   -webkit-transform: rotate(45deg);
   border-left: none;
@@ -423,6 +423,7 @@ main {
 	width: 100%;
 	border: 1px solid #191919;
 	border-radius: .5rem;
+	overflow: hidden;
 	background-color: #222222;
 }
 
@@ -1238,7 +1239,7 @@ footer {
 		gap: .5rem;
 	}
 	
-	.botao-mobile  span {
+	.botao-mobile span {
 		font-size: .7rem;
 		text-align: center;
 	}
@@ -1410,6 +1411,10 @@ footer {
 
 	footer img {
 		width: 1.2rem;
+	}
+
+	.git-linked {
+		width: 2rem;
 	}
 
 	.contato-mobile01 {
