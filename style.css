@@ -663,7 +663,7 @@ main {
 
 .info-projeto {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	padding: .3rem;
 }
 
