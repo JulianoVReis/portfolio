@@ -60,6 +60,7 @@ body {
 
 .menu img {
 	display: block;
+	height: auto;
 	width: 10rem;
 	border-radius: 50%;
 	margin: 4.5rem 0 .3rem;
