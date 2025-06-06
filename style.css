@@ -11,6 +11,7 @@
 }
 
 body {
+	background-color: #131313;
 	background: url('img/wallpaper.jpg') center no-repeat fixed;
 	background-size: cover;
 }
