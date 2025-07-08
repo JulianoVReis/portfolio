@@ -670,10 +670,6 @@ p {
 	padding: 2.5rem 0 4.3rem;
 }
 
-.to-do-list-p {
-	font-size: .9rem;
-}
-
 .info-projeto {
 	display: flex;
 	flex-wrap: wrap;
