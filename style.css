@@ -122,10 +122,6 @@ main {
 	font-size: 5rem;
 }
 
-.palavra {
-	margin-right: 0.5rem;
-}
-
 .v {
 	opacity: 0;
 	animation: drop 0.4s linear forwards;
