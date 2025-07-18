@@ -1,102 +1,65 @@
-# Portfólio Profissional – Juliano Reis
+# Portfólio Interativo
 
-Bem-vindo ao meu portfólio!  
-Este projeto foi criado para apresentar meus projetos, trajetória acadêmica, habilidades técnicas e formas de contato, com um design moderno e responsivo, pensado para destacar minha jornada no desenvolvimento web.
+Este é um projeto de portfólio pessoal desenvolvido com HTML, CSS e JavaScript. Ele exibe informações sobre o autor, habilidades técnicas, projetos e formas de contato, tudo em uma única interface interativa, moderna e responsiva.
 
----
+## 🖼️ Preview
 
-## 📸 Demonstração
+![Preview do Portfólio](./img/portfolio.png)
 
-![Imagem de perfil e navegação do portfólio](img/Screenshot.png)
-
----
+> Coloque um print da interface do site na pasta `/img` com o nome `preview.png`. Essa imagem aparecerá aqui como visualização do projeto no GitHub.
 
 ## ✨ Funcionalidades
 
-- **Menu Fixo Lateral/Superior**: Navegação fácil entre Home, Sobre, Skills, Projetos e Contato.
-- **Integração com GitHub & LinkedIn**: Ícones para acesso direto às minhas redes profissionais.
-- **Currículo Online**: Botão para acessar meu currículo via Google Drive.
-- **Contato Rápido**: E-mail e WhatsApp exibidos para contato imediato.
-- **Animações e Efeitos Visuais**: Transições suaves (AOS.js) e animação de texto (TypeIt.js).
-- **Seção Sobre**: Breve apresentação e objetivos profissionais.
-- **Skills, Cursos e Certificados**: Flip cards interativos com links para certificados no GitHub.
-- **Projetos em Destaque**: Cards com tecnologias utilizadas, imagem ilustrativa e link direto para o projeto.
-- **Responsivo**: Layout adaptável para desktop e dispositivos móveis.
+- Interface com layout único (single box), sem múltiplas páginas.
+- Cada seção (Sobre, Skills, Projetos, Contato) é exibida dinamicamente na mesma tela com efeito de transição de **baixo para cima**.
+- Animações suaves com `opacity` e `transform: translateY(1.875rem)`.
+- Efeito de digitação usando a biblioteca **TypeIt**.
+- Alternância entre **modo claro** e **modo escuro** com ícones animados.
+- Menu fixo no topo com destaque da seção ativa.
+- Responsivo para **mobile**, **tablet** e **desktop**.
+- Dropdown menu adaptado para telas menores.
+- Cartões interativos nos projetos (hover, flip e efeitos visuais).
 
----
+## 🧱 Tecnologias Utilizadas
 
-## 🛠️ Tecnologias Utilizadas
+- HTML5
+- CSS3 (rem, keyframes, media queries)
+- JavaScript Vanilla
+- TypeIt.js (efeito de digitação)
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- [AOS.js](https://michalsnik.github.io/aos/) (Animações on scroll)
-- [TypeIt.js](https://typeitjs.com/) (Efeito de máquina de escrever)
-- SVG e imagens vetoriais personalizadas
+## 🚀 Como Rodar Localmente
 
----
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/JulianoVReis/portfolio
+   ```
 
-## 📁 Estrutura do Projeto
+2. Acesse a pasta:
+   ```bash
+   cd seu-repositorio
+   ```
+
+3. Abra o arquivo `index.html` no navegador.
+
+## 📁 Estrutura
 
 ```
-/
-├── index.html             # Página principal
-├── style.css              # Estilos customizados e responsivos
-├── script.js              # Scripts para animações e interatividade
-├── img/                   # Imagens, ícones, foto de perfil
-├── font/                  # Fontes personalizadas
+├── index.html        # Estrutura da interface
+├── style.css         # Estilos, temas e animações
+├── script.js         # Comportamento dinâmico e interatividade
+├── /img              # Ícones, fotos, logos, preview.png, etc.
 ```
 
----
+## 💡 Observações
 
-## 🚀 Como Executar
+- A navegação entre seções acontece **sem recarregar a página**, via exibição condicional de `.divs`.
+- Nenhum efeito de desfoque é aplicado ao conteúdo de fundo.
+- O código é limpo, organizado e facilmente escalável.
 
-1. **Clone este repositório:**
-   ```bash
-   git clone https://github.com/JulianoVReis/portfolio.git
-   ```
-2. **Acesse a pasta do projeto:**
-   ```bash
-   cd portfolio
-   ```
-3. **Abra o arquivo `index.html` no seu navegador favorito.**
-   - Para navegação dinâmica funcionar perfeitamente, recomenda-se rodar em um servidor local:
-     ```bash
-     # Python 3
-     python -m http.server
-     # ou Node.js
-     npx http-server .
-     ```
+## 📞 Contato
+
+Entre em contato diretamente pela seção **Contato** do próprio site.
 
 ---
 
-## 📚 Seções do Portfólio
-
-- **Home:** Apresentação inicial e links para contato rápido.
-- **Sobre:** História e objetivos profissionais.
-- **Skills:** Lista de cursos, formações e certificados.
-- **Projetos:** Galeria de projetos com imagens, tecnologias e links.
-- **Contato:** E-mail, WhatsApp, GitHub e LinkedIn.
-
----
-
-## 💡 Diferenciais
-
-- **Visual moderno** com animações e efeitos.
-- **Navegação acessível** em qualquer dispositivo.
-- **Certificados auditáveis** com links diretos ao GitHub.
-- **Projetos reais e atualizados** para consulta.
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por **Juliano Reis**  
-[LinkedIn](https://www.linkedin.com/in/juliano-reis-290b0b324/) | julianovreis@gmail.com
-
----
-
-## 📄 Licença
-
-Este portfólio é de uso pessoal, mas pode servir de inspiração para outros desenvolvedores.  
-Para reutilização de partes específicas, por favor, entre em contato.
+Desenvolvido com 💻 e ☕ por [Juliano Reis].

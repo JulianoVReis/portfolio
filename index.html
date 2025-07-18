@@ -3,327 +3,255 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Estudante de Análise e Desenvolvimento de Sistemas, em busca de oportunidades na área de desenvolvimento web" />
-		<meta property="og:title" content="Meu Portfólio Profissional" />
-		<meta property="og:description" content="Projetos, currículo e informações para contato. Acompanhe minha jornada no desenvolvimento web!" />
-		<meta property="og:url" content="https://julianovreis.github.io/portfolio/" />
-		<meta property="og:image" content="https://github.com/JulianoVReis/portfolio/blob/main/img/minhaFoto.jpg" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-		<meta property="og:type" content="website" />
-		<link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+		<link rel="stylesheet" href="style.css" />
 		<title>Portfólio</title>
 	</head>
 	<body>
 		<header>
-			<nav class="menu scrolling">
+			<nav class="menu">
+				<div>
+					<div class="dropdown">
+						<img src="img/light.svg" alt="Menu" class="dropdown-img" />
+						<ul class="dropdown-menu">
+							<li class="tema-light">Light</li>
+							<li class="tema-dark">Dark</li>
+						</ul>
+					</div>
+					<img class="img1 modo" src="img/light_mode.svg" alt="Modo Claro" />
+					<img class="img2 modo" src="img/dark-mode.svg" alt="Modo Escuro" />
+				</div>
 				<ul>
-					<li>
-						<a href="#home"><span>HOME</span></a>
-					</li>
-					<li>
-						<a href="#sect02"><span>SOBRE</span></a>
-					</li>
-					<li>
-						<a href="#sect03"><span>SKILLS</span></a>
-					</li>
-					<li>
-						<a href="#sect04"><span>PROJETOS</span></a>
-					</li>
-					<li class="contato">
-						<a href="#contato"><span>CONTATO</span></a>
-					</li>
+					<li class="efeito-link sobre">Sobre</li>
+					<li class="efeito-link skills">Skills</li>
+					<li class="efeito-link projetos">Projetos</li>
+					<li class="efeito-link contato">Contato</li>
 				</ul>
-				<img src="img/minhaFoto.jpg" alt="Foto Perfil" height="997" width="997" />
-				<p>Juliano Reis</p>
 			</nav>
 		</header>
-		<main id="home">
-			<section class="sect-contato">
-				<div class="social">
-					<a href="https://github.com/JulianoVReis" target="_blank"
-						><abbr title="GitHub"><img src="img/github.svg" alt="GitHub" /></abbr
-					></a>
-					<a href="https://www.linkedin.com/in/juliano-reis-290b0b324/" target="_blank"
-						><abbr title="linkedIn"><img src="img/linkedin.svg" alt="linkedIn" /></abbr
-					></a>
-				</div>
-				<div class="vitae">
-					<p>Acessar Curriculum</p>
-					<div class="arrow02"></div>
-					<button class="glow-on-hover" type="button"><a href="https://drive.google.com/file/d/1jz3s-Cg0EA_QMkeYLSCLjXAXWv07_ljt/view?usp=drive_link" target="_blank">G. Drive</a></button>
-				</div>
-				<div class="div-contato">
+		<main>
+			<section class="container">
+				<div class="intro">
+					<img src="img/foto.jpg" alt="Foto Perfil" />
 					<div>
-						<abbr title="Gmail"><img src="img/gmail.svg" alt="Gmail" /></abbr>
-						<p>julianovreis@gmail.com</p>
-					</div>
-					<div>
-						<abbr title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" /></abbr>
-						<p>(51) 98919-9543</p>
+						<h1 class="drop">
+							<span>&lt;</span>Bem-
+							<span class="v">V</span>
+							<span class="i">i</span>
+							<span class="n">n</span>
+							<span class="d">d</span>
+							<span class="o">o</span>
+							<span class="exclamacao">!</span><span>/&gt;</span>
+						</h1>
+						<p>
+							Estudante de <span>// Análise e Desenvolvimento de Sistemas</span>, em busca<br />
+							de oportunidades na área de <span>// desenvolvimento web</span>.
+						</p>
 					</div>
 				</div>
-			</section>
-			<section id="sect01" class="conteudo1">
-				<p id="texto01"></p>
-				<div class="botao-mobile">
-					<span class="texto-botao"
-						>Acessar <br />
-						Curriculum</span
-					>
-					<button class="glow-on-hover" type="button"><a href="https://drive.google.com/file/d/1jz3s-Cg0EA_QMkeYLSCLjXAXWv07_ljt/view?usp=drive_link" target="_blank">G. Drive</a></button>
+				<div class="efeito-fundo"><span>{</span><span>}</span></div>
+				<div class="sobre-div">
+					<p class="texto-1"></p>
+					<div>
+						<p>
+							Me chamo Juliano, sou estudante de Análise e desenvolvimento de sistemas. Sou apaixonado por tecnologia e estou em busca de uma oportunidade na área de desenvolvimento web. Tenho
+							facilidade de aprender, boa comunicação e estou sempre em busca de novos conhecimentos. Estou disposto a encarar novos desafios e aprender o que for necessário para progredir nesse novo
+							caminho. Meu objetivo é me tornar um desenvolvedor Front-End.
+						</p>
+						<span>
+							<img src="img/aspas.png" alt="" />
+							<img src="img/aspas.png" alt="" />
+						</span>
+					</div>
 				</div>
-			</section>
-			<section class="conteudo2 sect01">
-				<div class="foto-mobile">
-					<img src="img/minhaFoto.jpg" alt="Foto Perfil" />
-					<p>Juliano Reis</p>
-				</div>
-				<div class="drop">
-					<p>Bem-</p>
-					<p class="v">V</p>
-					<p class="i">i</p>
-					<p class="n">n</p>
-					<p class="d">d</p>
-					<p class="o">o</p>
-					<p class="exclamacao"><span class="span-verde">!</span></p>
-				</div>
-				<div class="texto-intro">
-					<p data-aos="fade-down" data-aos-duration="1000">Estudante de <span class="span-verde">// Análise e Desenvolvimento de Sistemas</span>, em</p>
-					<p data-aos="fade-down" data-aos-duration="1300">busca de oportunidades na área de <span class="span-verde">// desenvolvimento web</span>.</p>
-				</div>
-				<div class="arrow">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</section>
-			<section id="sect02" class="conteudo1">
-				<p id="texto02"></p>
-			</section>
-			<section class="conteudo2 sobre">
-				<p data-aos="fade-right" data-aos-duration="1500">
-					Olá, meu nome é Juliano. Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente cursando o primeiro ano da faculdade. Estou em constante busca por aprendizado e desafios que me
-					permitam aplicar meus conhecimentos, aprimorar minhas competências e contribuir para o desenvolvimento de projetos impactantes.
-				</p>
-				<div class="fundo" class="fundo" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="1000">#</div>
-				<h2 data-aos="fade-left" data-aos-duration="1500">Sobre</h2>
-			</section>
-			<section id="sect03" class="conteudo1">
-				<p id="texto03"></p>
-			</section>
-			<section class="conteudo2 skills">
-				<div class="cursos" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
-					<h3 class="sub" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">Cursos</h3>
-					<div class="div-cursos">
-						<div>
-							<h4><a class="efeito-link" href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a> 🔗</h4>
-							<ul>
-								<li data-aos="flip-down" data-aos-duration="2000" data-aos-delay="500">
-									<p><span class="lista-html5">HTML5</span> e <span class="lista-css3">CSS3</span></p>
-									<span class="sub">40h</span>
-								</li>
-								<li data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600"><span class="lista-javascript">JavaScript</span><span class="sub">40h</span></li>
-								<li data-aos="flip-down" data-aos-duration="2000" data-aos-delay="700"><span class="lista-algoritmo">Algoritmo</span><span class="sub">40h</span></li>
-							</ul>
+				<div class="skills-div">
+					<p class="texto-2"></p>
+					<div>
+						<div class="cursos">
+							<h3>Cursos</h3>
+							<div class="lista-cursos">
+								<h4><a class="efeito-link" href="https://www.origamid.com/" target="_blank">Origamid</a> <img src="img/link.svg" alt="" /></h4>
+								<ul>
+									<li>
+										<span><span class="html">HTML5</span> e <span class="css">CSS3</span></span> <span>23h</span>
+									</li>
+									<li><span class="javascript">JavaScript</span> <span>37h</span></li>
+								</ul>
+								<h4><a class="efeito-link" href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a> <img src="img/link.svg" alt="" /></h4>
+								<ul>
+									<li>
+										<span><span class="html">HTML5</span> e <span class="css">CSS3</span></span> <span>40h</span>
+									</li>
+									<li><span class="javascript">JavaScript</span> <span>40h</span></li>
+									<li><span class="algoritmo">Algoritmo</span> <span>40h</span></li>
+								</ul>
+							</div>
 						</div>
-						<div>
-							<h4><a class="efeito-link" href="https://www.origamid.com/" target="_blank">Origamid</a> 🔗</h4>
-							<ul>
-								<li data-aos="flip-down" data-aos-duration="2000" data-aos-delay="500">
-									<p><span class="lista-html5">HTML5</span> e <span class="lista-css3">CSS3</span></p>
-									<span class="sub">23h</span>
-								</li>
-								<li data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600"><span class="lista-javascript">JavaScript</span><span class="sub">37h</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="formacao" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
-					<h3 class="sub" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">Formação</h3>
-					<div>
-						<a href="https://qi.edu.br/" target="_blank"><img src="img/faqi.png" alt="FAQI" /></a>
-						<h4>TECNÓLOGO</h4>
-						<p>Análise e Desenvolvimento de Sistemas</p>
-						<p class="sub">(cursando)</p>
-					</div>
-				</div>
-				<div class="certificados" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
-					<h3 class="sub" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">Certificados</h3>
-					<div>
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/html.svg" alt="Logo HTML5" />
+						<div class="certificados">
+							<h3>Certificados</h3>
+							<div class="lista-certificados">
+								<div class="flip-card">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<img src="img/html.svg" alt="Logo HTML5" />
+										</div>
+										<div class="flip-card-back">
+											<a href="https://github.com/JulianoVReis/Certificados/tree/main/html-css/" class="efeito-link" target="_blank">GitHub</a>
+										</div>
+									</div>
 								</div>
-								<div class="flip-card-back">
-									<a href="https://github.com/JulianoVReis/Certificados/tree/main/html-css/" class="efeito-link" target="_blank">GitHub</a>
+								<div class="flip-card">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<img src="img/css.svg" alt="Logo CSS3" />
+										</div>
+										<div class="flip-card-back">
+											<a href="https://github.com/JulianoVReis/Certificados/tree/main/html-css/" class="efeito-link" target="_blank">GitHub</a>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<img src="img/javascript.svg" alt="Logo JavaScript" />
+										</div>
+										<div class="flip-card-back">
+											<a href="https://github.com/JulianoVReis/Certificados/tree/main/javascript/" class="efeito-link" target="_blank">GitHub</a>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<img src="img/algoritmo.svg" alt="Logo Algoritmo" />
+										</div>
+										<div class="flip-card-back">
+											<a href="https://github.com/JulianoVReis/Certificados/tree/main/algoritmo/" class="efeito-link" target="_blank">GitHub</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/css.svg" alt="Logo CSS3" />
-								</div>
-								<div class="flip-card-back">
-									<a href="https://github.com/JulianoVReis/Certificados/tree/main/html-css/" class="efeito-link" target="_blank">GitHub</a>
-								</div>
-							</div>
-						</div>
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/javascript.svg" alt="Logo JavaScript" />
-								</div>
-								<div class="flip-card-back">
-									<a href="https://github.com/JulianoVReis/Certificados/tree/main/javascript/" class="efeito-link" target="_blank">GitHub</a>
-								</div>
-							</div>
-						</div>
-						<div class="flip-card">
-							<div class="flip-card-inner">
-								<div class="flip-card-front">
-									<img src="img/algoritmo.svg" alt="Logo Algoritmo" />
-								</div>
-								<div class="flip-card-back">
-									<a href="https://github.com/JulianoVReis/Certificados/tree/main/algoritmo/" class="efeito-link" target="_blank">GitHub</a>
-								</div>
+						<div class="formacao">
+							<h3>Formação</h3>
+							<div class="formacao-box">
+								<a href="https://qi.edu.br/" target="_blank"><img src="img/faqi.png" alt="FAQI" /></a>
+								<h4>TECNÓLOGO</h4>
+								<p>Análise e Desenvolvimento de Sistemas</p>
+								<p>(cursando)</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section id="sect04" class="conteudo1">
-				<p id="texto04"></p>
-			</section>
-			<section class="conteudo2 projetos">
-				<div data-aos="flip-left" data-aos-duration="1500" class="box">
-					<div class="imgBox">
-						<div class="info-projeto">
-							<span class="span-verde">&#x21C5;</span>
-							<p>HTML5</p>
-							<p>CSS3</p>
-							<p>JavaScript</p>
+				<div class="projetos-div">
+					<p class="texto-3"></p>
+					<div class="projetos-box">
+						<div class="box">
+							<div class="imgBox">
+								<div class="info-projeto">
+									<span class="span-font">&#x21C5;</span>
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript</p>
+								</div>
+								<img src="img/portfolio_re2.png" alt="Portfólio RE2" />
+							</div>
+							<div class="content">
+								<h2>Portfólio RE2</h2>
+								<p><a class="efeito-link" href="https://julianovreis.github.io/portfolio-re2/" target="_blank">Acesse</a></p>
+							</div>
 						</div>
-						<img src="img/port_re2.png" alt="Portfólio RE2" />
-					</div>
-					<div class="content">
-						<h2>Portfólio RE2</h2>
-						<p><a class="efeito-link" href="https://julianovreis.github.io/portfolio-re2/" target="_blank">Acesse</a></p>
+						<div class="box">
+							<div class="imgBox">
+								<div class="info-projeto to-do-list-p">
+									<span class="span-font">&#x21C5;</span>
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript</p>
+								</div>
+								<img src="img/to_do_list.png" alt="To Do List" />
+							</div>
+							<div class="content">
+								<h2>To Do List</h2>
+								<p><a class="efeito-link" href="https://todolistprojeto.netlify.app/" target="_blank">Acesse</a></p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="imgBox">
+								<div class="info-projeto">
+									<span class="span-font">&#x21C5;</span>
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript</p>
+								</div>
+								<img src="img/pokedex.png" alt="Pokédex" />
+							</div>
+							<div class="content">
+								<h2>Pokédex</h2>
+								<p><a class="efeito-link" href="https://julianovreis.github.io/pokedex/" target="_blank">Acesse</a></p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="imgBox">
+								<div class="info-projeto">
+									<span class="span-font">&#x21C5;</span>
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript</p>
+								</div>
+								<img src="img/bikcraft.png" alt="Bikcraft" />
+							</div>
+							<div class="content">
+								<h2>Bikcraft</h2>
+								<p><a class="efeito-link" href="https://projetositebikcraft.netlify.app/" target="_blank">Acesse</a></p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="imgBox">
+								<div class="info-projeto">
+									<span class="span-font">&#x21C5;</span>
+									<p>HTML5</p>
+									<p>CSS3</p>
+								</div>
+								<img src="img/projeto-portfolio.png" alt="Projeto Portfólio" />
+							</div>
+							<div class="content">
+								<h2>Projeto Portfólio</h2>
+								<p><a class="efeito-link" href="https://julianovreis.github.io/projeto-portfolio/" target="_blank">Acesse</a></p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="imgBox">
+								<div class="info-projeto">
+									<span class="span-font">&#x21C5;</span>
+									<p>HTML5</p>
+									<p>CSS3</p>
+									<p>JavaScript</p>
+								</div>
+								<img src="img/animais-fantasticos.png" alt="Animais Fantásticos" />
+							</div>
+							<div class="content">
+								<h2>Animais Fantásticos</h2>
+								<p><a class="efeito-link" href="https://projetoanimaisfantasticos.netlify.app" target="_blank">Acesse</a></p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div data-aos="flip-left" data-aos-duration="1500" class="box">
-					<div class="imgBox">
-						<div class="info-projeto to-do-list-p">
-							<span class="span-verde">&#x21C5;</span>
-							<p>HTML5</p>
-							<p>CSS3</p>
-							<p>JavaScript</p>
+				<div class="contato-div">
+					<p class="texto-4"></p>
+					<div class="contato-box">
+						<p><img src="img/gmail.svg" alt="Gmail" />julianovreis@gmail.com</p>
+						<p><img src="img/whatsapp.svg" alt="WhatsApp" />(51) 98919-9543</p>
+						<div class="social">
+							<a href="https://github.com/JulianoVReis" target="_blank"><img src="img/github.svg" alt="GitHub" /></a>
+							<a href="https://www.linkedin.com/in/juliano-reis-290b0b324/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn" /></a>
+							<button class="glow-on-hover" type="button"><a href="https://drive.google.com/file/d/1jz3s-Cg0EA_QMkeYLSCLjXAXWv07_ljt/view?usp=drive_link" target="_blank">Curriculum</a></button>
 						</div>
-						<img src="img/to_do_list.png" alt="To Do List" />
-					</div>
-					<div class="content">
-						<h2>To Do List</h2>
-						<p><a class="efeito-link" href="https://todolistprojeto.netlify.app/" target="_blank">Acesse</a></p>
-					</div>
-				</div>
-				<div data-aos="flip-left" data-aos-duration="2000" class="box">
-					<div class="imgBox">
-						<div class="info-projeto">
-							<span class="span-verde">&#x21C5;</span>
-							<p>HTML5</p>
-							<p>CSS3</p>
-							<p>JavaScript</p>
-						</div>
-						<img src="img/pokedex.png" alt="Pokédex" />
-					</div>
-					<div class="content">
-						<h2>Pokédex</h2>
-						<p><a class="efeito-link" href="https://julianovreis.github.io/pokedex/" target="_blank">Acesse</a></p>
-					</div>
-				</div>
-				<div data-aos="flip-left" data-aos-duration="1500" class="box">
-					<div class="imgBox">
-						<div class="info-projeto">
-							<span class="span-verde">&#x21C5;</span>
-							<p>HTML5</p>
-							<p>CSS3</p>
-							<p>JavaScript</p>
-						</div>
-						<img src="img/bikcraft.png" alt="Bikcraft" />
-					</div>
-					<div class="content">
-						<h2>Bikcraft</h2>
-						<p><a class="efeito-link" href="https://projetositebikcraft.netlify.app/" target="_blank">Acesse</a></p>
-					</div>
-				</div>
-				<div data-aos="flip-left" data-aos-duration="2500" class="box">
-					<div class="imgBox">
-						<div class="info-projeto">
-							<span class="span-verde">&#x21C5;</span>
-							<p>HTML5</p>
-							<p>CSS3</p>
-						</div>
-						<img src="img/projeto-portfolio.png" alt="Projeto Portfólio" />
-					</div>
-					<div class="content">
-						<h2>Projeto Portfólio</h2>
-						<p><a class="efeito-link" href="https://julianovreis.github.io/projeto-portfolio/" target="_blank">Acesse</a></p>
-					</div>
-				</div>
-				<div data-aos="flip-left" data-aos-duration="3000" class="box">
-					<div class="imgBox">
-						<div class="info-projeto">
-							<span class="span-verde">&#x21C5;</span>
-							<p>HTML5</p>
-							<p>CSS3</p>
-							<p>JavaScript</p>
-						</div>
-						<img src="img/animais-fantasticos.png" alt="Animais Fantásticos" />
-					</div>
-					<div class="content">
-						<h2>Animais Fantásticos</h2>
-						<p><a class="efeito-link" href="https://projetoanimaisfantasticos.netlify.app" target="_blank">Acesse</a></p>
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer id="contato">
-			<div class="contato-mobile01">
-				<div>
-					<abbr title="Gmail"><img src="img/gmail.svg" alt="Gmail" /></abbr>
-					<p>julianovreis@gmail.com</p>
-				</div>
-				<div>
-					<abbr title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" /></abbr>
-					<p>(51) 98919-9543</p>
-				</div>
-			</div>
-			<div class="contato-mobile02">
-				<div class="social-mobile">
-					<a href="https://github.com/JulianoVReis" target="_blank"
-						><abbr title="GitHub"><img class="git-linked" src="img/github.svg" alt="GitHub" /></abbr
-					></a>
-					<a href="https://www.linkedin.com/in/juliano-reis-290b0b324/" target="_blank"
-						><abbr title="linkedIn"><img class="git-linked" src="img/linkedin.svg" alt="linkedIn" /></abbr
-					></a>
-				</div>
-			</div>
-			<div class="contato-mobile03">
-				<p>Site criado por <strong>Juliano Reis</strong></p>
-				<p><span class="nome-azul">juliano</span>.<span class="amarelo01">Reis</span><span class="amarelo02">( )</span></p>
-			</div>
-		</footer>
 		<script src="script.js"></script>
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TDXSLKMZGZ"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
