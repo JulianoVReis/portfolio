@@ -62,4 +62,4 @@ Entre em contato diretamente pela seção **Contato** do próprio site.
 
 ---
 
-Desenvolvido com 💻 e ☕ por [Juliano Reis].
+Desenvolvido com 💻 e ☕ por Juliano Reis.
