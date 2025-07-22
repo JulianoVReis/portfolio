@@ -125,6 +125,11 @@ body {
 	cursor: pointer;
 }
 
+.menu li img {
+	display: block;
+	width: 2rem;
+}
+
 .nav-ativa {
 	background-position: 0 !important;
 }
