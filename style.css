@@ -24,6 +24,17 @@
 	--lista-curso3: #f5de19;
 	--lista-curso4: #ff7400;
 	--lista-curso5: #53C1DE;
+
+	--prog-1: #FF0000;
+	--prog-2: #FF4000;
+	--prog-3: #FF8000;
+	--prog-4: #FFBF00;
+	--prog-5: #FFFF00;
+	--prog-6: #BFFF00;
+	--prog-7: #80FF00;
+	--prog-8: #40FF00;
+	--prog-9: #00FF40;
+	--prog-10: #00FF80;
 }
 
 .modo-claro {
@@ -308,8 +319,7 @@ body {
 .lista-cursos h4 {
 	display: flex;
 	align-items: center;
-	gap: 0.4rem;
-	margin: 0.5rem 0 0.25rem;
+	gap: .4rem;
 }
 
 .lista-cursos h4 img {
@@ -321,8 +331,9 @@ body {
 .lista-cursos li {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	background-color: var(--cor-4);
-	padding: 0.2rem 0.4rem;
+	padding: .1rem .4rem .2rem;
 }
 
 .lista-cursos li + li {
@@ -347,6 +358,77 @@ body {
 
 .react {
 	color: var(--lista-curso5);
+}
+
+.progresso {
+	display: flex;
+	width: fit-content;
+	height: .9rem;
+	border-radius: .2rem;
+	overflow: hidden;
+	border: .01rem solid var(--font-1);
+}
+
+.progresso:hover {
+	cursor: progress;
+}
+
+.progresso span {
+	width: .4rem;
+}
+
+.progresso span + span {
+	border-left: .01rem solid var(--font-1);
+}
+
+.cor-1 {
+	color: transparent;
+	background-color: var(--prog-1);
+}
+
+.cor-2 {
+	color: transparent;
+	background-color: var(--prog-2);
+}
+
+.cor-3 {
+	color: transparent;
+	background-color: transparent;
+}
+
+.cor-4 {
+	color: transparent;
+	background-color: transparent;
+}
+
+.cor-5 {
+	color: transparent;
+	background-color: transparent;
+}
+
+.cor-6 {
+	color: transparent;
+	background-color: transparent;
+}
+
+.cor-7 {
+	color: transparent;
+	background-color: transparent;
+}
+
+.cor-8 {
+	color: transparent;
+	background-color: transparent;
+}
+
+.cor-9 {
+	color: transparent;
+	background-color: transparent;
+}
+
+.cor-10 {
+	color: transparent;
+	background-color: transparent;
 }
 
 .certificados {
