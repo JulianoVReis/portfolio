@@ -23,6 +23,7 @@
 	--lista-curso2: #2862e9;
 	--lista-curso3: #f5de19;
 	--lista-curso4: #ff7400;
+	--lista-curso5: #53C1DE;
 }
 
 .modo-claro {
@@ -42,6 +43,7 @@
 	--lista-curso2: #2862e9;
 	--lista-curso3: #b5a40b;
 	--lista-curso4: #ff7400;
+	--lista-curso5: #122A51;
 }
 
 .modo-claro .menu {
@@ -341,6 +343,10 @@ body {
 
 .javascript {
 	color: var(--lista-curso3);
+}
+
+.react {
+	color: var(--lista-curso5);
 }
 
 .certificados {
