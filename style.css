@@ -367,6 +367,8 @@ body {
 	border-radius: .2rem;
 	overflow: hidden;
 	border: .01rem solid var(--font-1);
+	border-right: .2rem solid var(--font-1);
+	border-left: .2rem solid var(--font-1);
 }
 
 .progresso:hover {
