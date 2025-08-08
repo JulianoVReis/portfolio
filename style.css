@@ -39,9 +39,9 @@
 
 .modo-claro {
 	--cor-1: #a8a8a8;
-	--cor-2: #9d9d9d;
+	--cor-2: #bababa;
 	--cor-3: #ccc;
-	--cor-4: #a8a8a8;
+	--cor-4: #ececec;
 	--cor-5: #ccc;
 
 	--font-1: #111;
@@ -282,16 +282,16 @@ body {
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 1.5rem;
-	border-radius: 0.3rem;
-	border: 0.1rem solid var(--cor-2);
+	border-radius: .3rem;
+	border: .1rem solid var(--cor-2);
 	background-color: var(--cor-4);
 	padding: 2rem;
 }
 
 .cursos {
 	width: 20rem;
-	border-radius: 0.2rem;
-	transition: all 0.3s ease;
+	border-radius: .2rem;
+	transition: all .3s ease;
 }
 
 .cursos:hover {
@@ -300,32 +300,33 @@ body {
 
 .cursos h3 {
 	text-align: center;
-	border-radius: 0.2rem;
-	border: 0.1rem solid var(--cor-2);
+	border-radius: .2rem;
+	border: .1rem solid var(--cor-2);
 	background-color: var(--cor-3);
-	padding: 0.2rem;
-	margin-bottom: 0.3rem;
+	padding: .2rem;
+	margin-bottom: .3rem;
 }
 
 .lista-cursos {
 	display: flex;
 	flex-direction: column;
-	border-radius: 0.2rem;
-	border: 0.1rem solid var(--cor-2);
+	border-radius: .2rem;
+	border: .1rem solid var(--cor-2);
 	background-color: var(--cor-3);
-	padding: 0.5rem 1rem 1rem;
+	padding: .5rem 1rem 1rem;
 }
 
 .lista-cursos h4 {
 	display: flex;
 	align-items: center;
 	gap: .4rem;
+	margin: .3rem 0;
 }
 
 .lista-cursos h4 img {
 	display: block;
 	width: 1rem;
-	padding-top: 0.18rem;
+	padding-top: .18rem;
 }
 
 .lista-cursos li {
@@ -333,11 +334,11 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--cor-4);
-	padding: .1rem .4rem .2rem;
+	padding: .1rem .4rem .2rem;,0
 }
 
 .lista-cursos li + li {
-	margin-top: 0.2rem;
+	margin-top: .2rem;
 }
 
 .html {
@@ -363,12 +364,12 @@ body {
 .progresso {
 	display: flex;
 	width: fit-content;
-	height: .9rem;
 	border-radius: .2rem;
 	overflow: hidden;
 	border: .01rem solid var(--font-1);
 	border-right: .2rem solid var(--font-1);
 	border-left: .2rem solid var(--font-1);
+	margin-top: .1rem;
 }
 
 .progresso:hover {
@@ -376,7 +377,9 @@ body {
 }
 
 .progresso span {
-	width: .4rem;
+	display: inline-block;
+	width: .3rem;
+	height: .80rem;
 }
 
 .progresso span + span {
@@ -435,8 +438,8 @@ body {
 
 .certificados {
 	width: 20rem;
-	border-radius: 0.2rem;
-	transition: all 0.3s ease;
+	border-radius: .2rem;
+	transition: all .3s ease;
 }
 
 .certificados:hover {
@@ -445,11 +448,11 @@ body {
 
 .certificados h3 {
 	text-align: center;
-	border-radius: 0.2rem;
-	border: 0.1rem solid var(--cor-2);
+	border-radius: .2rem;
+	border: .1rem solid var(--cor-2);
 	background-color: var(--cor-3);
-	padding: 0.2rem;
-	margin-bottom: 0.3rem;
+	padding: .2rem;
+	margin-bottom: .3rem;
 }
 
 .lista-certificados {
@@ -458,10 +461,10 @@ body {
 	justify-content: space-evenly;
 	align-items: center;
 	height: 15.76rem;
-	border-radius: 0.2rem;
-	border: 0.1rem solid var(--cor-2);
+	border-radius: .2rem;
+	border: .1rem solid var(--cor-2);
 	background-color: var(--cor-3);
-	padding: 0.3rem;
+	padding: 0,.3rem;
 }
 
 .formacao {
@@ -693,11 +696,11 @@ body {
 	background-size: 200% 100%;
 	background-position: -100%;
 	display: inline-block;
-	padding: 0.3125rem 0;
+	padding: .05rem 0;
 	position: relative;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	transition: all 0.3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 .efeito-link:before {
@@ -705,10 +708,10 @@ body {
 	background: var(--font-3);
 	display: block;
 	position: absolute;
-	bottom: -0.1875rem;
+	bottom: -.1875rem;
 	left: 0;
 	width: 0;
-	height: 0.1875rem;
+	height: .1875rem;
 	transition: all 0.3s ease-in-out;
 }
 
