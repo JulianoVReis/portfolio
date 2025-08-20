@@ -398,7 +398,7 @@ body {
 
 .cor-3 {
 	color: transparent;
-	background-color: transparent;
+	background-color: var(--prog-3);
 }
 
 .cor-4 {
