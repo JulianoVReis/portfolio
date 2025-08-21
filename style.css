@@ -386,6 +386,11 @@ body {
 	border-left: .01rem solid var(--font-1);
 }
 
+.cor-0 {
+	color: transparent;
+	background-color: transparent;
+}
+
 .cor-1 {
 	color: transparent;
 	background-color: var(--prog-1);
@@ -403,37 +408,37 @@ body {
 
 .cor-4 {
 	color: transparent;
-	background-color: transparent;
+	background-color: var(--prog-4);
 }
 
 .cor-5 {
 	color: transparent;
-	background-color: transparent;
+	background-color: var(--prog-5);
 }
 
 .cor-6 {
 	color: transparent;
-	background-color: transparent;
+	background-color: var(--prog-6);
 }
 
 .cor-7 {
 	color: transparent;
-	background-color: transparent;
+	background-color: var(--prog-7);
 }
 
 .cor-8 {
 	color: transparent;
-	background-color: transparent;
+	background-color: var(--prog-8);
 }
 
 .cor-9 {
 	color: transparent;
-	background-color: transparent;
+	background-color: var(--prog-9);
 }
 
 .cor-10 {
 	color: transparent;
-	background-color: transparent;
+	background-color: var(--prog-10);
 }
 
 .certificados {
