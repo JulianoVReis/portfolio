@@ -25,6 +25,7 @@
 	--lista-curso4: #ff7400;
 	--lista-curso5: #53C1DE;
 	--lista-curso6: #00546B;
+	--lista-curso7: #9F52B3;
 
 	--prog-1: #FF0000;
 	--prog-2: #FF4000;
@@ -364,6 +365,10 @@ body {
 
 .mysql {
 	color: var(--lista-curso6);
+}
+
+.uiDesign {
+	color: var(--lista-curso7);
 }
 
 .progresso {
